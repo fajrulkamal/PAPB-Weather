@@ -21,9 +21,13 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "OPENWEATHERMAP_API_KEY", "\"${project.findProperty("openweathermap.apikey")}\"")
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "OPENWEATHERMAP_API_KEY", "\"${project.findProperty("openweathermap.apikey")}\"")
         }
     }
     compileOptions {

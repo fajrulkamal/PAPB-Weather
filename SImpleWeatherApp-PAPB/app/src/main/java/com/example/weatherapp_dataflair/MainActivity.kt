@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private fun getCurrentWeather() {
         GlobalScope.launch(Dispatchers.IO){
             val response = try {
-                RetrofitInstance.api.getCurrentWeather("mumbai","metric", "xxxx")
+                RetrofitInstance.api.getCurrentWeather("Jakarta","metric", "8e1c9e840f7170cb3e6c6d468ab58539")
             }catch (e:IOException){
                 Toast.makeText(applicationContext,"{${e.message}}",Toast.LENGTH_SHORT).show()
                 return@launch
