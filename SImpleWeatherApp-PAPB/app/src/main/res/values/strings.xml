@@ -1,5 +1,5 @@
 <resources>
-        <string name="app_name">WeatherApp-DataFlair</string>
+        <string name="app_name">SimpleWeatherApp-PAPBr</string>
         <string name="max_temp">Max temp</string>
         <string name="feels_like">Feels like</string>
         <string name="min_temp">Min temp</string>
